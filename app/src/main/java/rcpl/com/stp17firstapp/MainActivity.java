@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         et2=(EditText) findViewById(R.id.editText2);
         t=(TextView)findViewById((R.id.textView));
         b1=(Button) findViewById(R.id.button);
-        b2=(Button) findViewById(R.id.button2);
-        b3=(Button) findViewById(R.id.button3);
-        b4=(Button) findViewById(R.id.button4);
-        b5=(Button) findViewById(R.id.button5);
+        b2=(Button) findViewById(R.id.button4);
+        b3=(Button) findViewById(R.id.button6);
+        b4=(Button) findViewById(R.id.button7);
+        b5=(Button) findViewById(R.id.button8);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
