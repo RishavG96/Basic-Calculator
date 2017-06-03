@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText et1;
@@ -31,62 +32,93 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String num1=et1.getText().toString();
-                String num2=et2.getText().toString();
-                int n1=Integer.parseInt(num1);
-                int n2=Integer.parseInt(num2);
-                int sum=n1+n2;
-                t.setText("The sum is :" +sum);
+                if(et1.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter first number!",Toast.LENGTH_SHORT).show();
+                else if (et2.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter second number!",Toast.LENGTH_SHORT).show();
+                else {
+                    String num1 = et1.getText().toString();
+                    String num2 = et2.getText().toString();
+                    int n1 = Integer.parseInt(num1);
+                    int n2 = Integer.parseInt(num2);
+                    int sum = n1 + n2;
+                    t.setText("The sum is: " + sum);
+                }
+
 
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String num1=et1.getText().toString();
-                String num2=et2.getText().toString();
-                int n1=Integer.parseInt(num1);
-                int n2=Integer.parseInt(num2);
-                int sub=n1-n2;
-                t.setText("The diff is :" +sub);
+                if(et1.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter first number!",Toast.LENGTH_SHORT).show();
+                else if (et2.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter second number!",Toast.LENGTH_SHORT).show();
+                else {
+                    String num1 = et1.getText().toString();
+                    String num2 = et2.getText().toString();
+                    int n1 = Integer.parseInt(num1);
+                    int n2 = Integer.parseInt(num2);
+                    int sub = n1 - n2;
+                    t.setText("The diff is: " + sub);
 
-            }
+
+                }}
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String num1=et1.getText().toString();
-                String num2=et2.getText().toString();
-                int n1=Integer.parseInt(num1);
-                int n2=Integer.parseInt(num2);
-                int mul=n1*n2;
-                t.setText("The mul is :" +mul);
+                if(et1.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter first number!",Toast.LENGTH_SHORT).show();
+                else if (et2.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter second number!",Toast.LENGTH_SHORT).show();
+                else {
+                    String num1 = et1.getText().toString();
+                    String num2 = et2.getText().toString();
+                    int n1 = Integer.parseInt(num1);
+                    int n2 = Integer.parseInt(num2);
+                    int mul = n1 * n2;
+                    t.setText("The mul is: " + mul);
+
+
 
             }
-        });
+        }});
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String num1=et1.getText().toString();
-                String num2=et2.getText().toString();
-                int n1=Integer.parseInt(num1);
-                int n2=Integer.parseInt(num2);
-                double div=n1/n2;
-                t.setText("The div is :" +div);
+                if(et1.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter first number!",Toast.LENGTH_SHORT).show();
+                else if (et2.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter second number!",Toast.LENGTH_SHORT).show();
+                else {
+                    String num1 = et1.getText().toString();
+                    String num2 = et2.getText().toString();
+                    int n1 = Integer.parseInt(num1);
+                    int n2 = Integer.parseInt(num2);
+                    double div = n1 / n2;
+                    t.setText("The div is: " + div);
 
-            }
+
+                }}
         });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String num1=et1.getText().toString();
-                String num2=et2.getText().toString();
-                int n1=Integer.parseInt(num1);
-                int n2=Integer.parseInt(num2);
-                double mod=n1%n2;
-                t.setText("The mod is :" +mod);
+                if(et1.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter first number!",Toast.LENGTH_SHORT).show();
+                else if (et2.getText().toString().equals(""))
+                    Toast.makeText(MainActivity.this,"Enter second number!",Toast.LENGTH_SHORT).show();
+                else {
+                    String num1 = et1.getText().toString();
+                    String num2 = et2.getText().toString();
+                    int n1 = Integer.parseInt(num1);
+                    int n2 = Integer.parseInt(num2);
+                    double mod = n1 % n2;
+                    t.setText("The mod is: " + mod);
 
-            }
+            }}
         });
 
     }
